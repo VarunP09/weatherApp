@@ -18,6 +18,17 @@
 
 
             <div class="weather">
+
+                <div class="highAndLow">
+                    <div>
+                        <p class="underline">Low:</p>
+                        <p class ="low">72°F</p>
+                    </div>
+                    <div>
+                        <p class="underline">High:</p>
+                        <p class="high">72°F</p>
+                    </div>
+                </div>
                 
 
                 <img src="images/rain.png" class="weather-icon">
@@ -51,7 +62,7 @@
         
         <script>
             //API Key Removed Purposfully
-            const APIKey = ENTER_API_KEY_HERE
+            const APIKey = "cf61cde5089eb3be48b2388d6e290712"
             const APIUrl = "https://api.openweathermap.org/data/2.5/weather?&units=imperial&q=";
 
             const searchBox = document.querySelector(".search input");
@@ -73,6 +84,8 @@
                     document.querySelector(".city").innerHTML = data.name;
                     document.querySelector(".humidity").innerHTML = data.main.humidity + "%";
                     document.querySelector(".wind").innerHTML = Math.round(data.wind.speed) + " mph";
+                    document.querySelector(".low").innerHTML = Math.round(data.main.temp_min);
+                    document.querySelector(".high").innerHTML = Math.round(data.main.temp_max);
 
                     if(data.weather[0].main == "Clouds"){
                         weatherIcon.src = "images/clouds.png"

@@ -101,3 +101,12 @@ body{
     font-size: 14px;
     margin-top: 10px;
 }
+.highAndLow{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    font-size: 28px;
+}
+.underline{
+    text-decoration: underline;
+}
