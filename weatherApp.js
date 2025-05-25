@@ -1,9 +1,5 @@
 //API Key Removed Purposfully
-<<<<<<< HEAD
 const APIKey = "";
-=======
-const APIKey = "cf61cde5089eb3be48b2388d6e290712"
->>>>>>> f8d8408419e2fc4786b9f718792e5c26847ae141
 const APIUrl = "https://api.openweathermap.org/data/2.5/weather?&units=imperial&q=";
 
 const searchBox = document.querySelector(".search input");
